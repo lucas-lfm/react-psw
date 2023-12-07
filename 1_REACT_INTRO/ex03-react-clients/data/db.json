@@ -1,0 +1,24 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Bruno Sousa",
+      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil.jpg?alt=media&token=c12a18e5-cfc1-438a-8297-97d22e6fa572"
+    },
+    {
+      "id": 2,
+      "name": "Karolina Oliveira",
+      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil2.jpg?alt=media&token=9c0bcaed-f3f7-462f-9cc0-bef28d10d6b9"
+    },
+    {
+      "id": 3,
+      "name": "Jorge Miguel",
+      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil3.jpg?alt=media&token=4f932b14-01f1-46fb-9673-c293d93d6268"
+    },
+    {
+      "id": 4,
+      "name": "Bianca Lima",
+      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil4.jpg?alt=media&token=7d2cfdb0-61a1-44f7-b167-df6bc1dc34d0"
+    }
+  ]
+}

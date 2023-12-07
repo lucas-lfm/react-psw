@@ -1,0 +1,53 @@
+.add-client {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.add-client form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+  padding: 0px 20px 20px 20px;
+  border-bottom: 3px solid black;
+}
+
+.add-client label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+  width: 100%;
+}
+
+.add-client span {
+  font-weight: bold;
+}
+
+.add-client input,
+.add-client button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.add-client input {
+  border: 1px solid lightgray;
+}
+
+.add-client button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-client button:hover {
+  background-color: #50c050;
+}
