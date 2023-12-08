@@ -33,21 +33,22 @@ function App() {
   return (
     <>
       <h1>Lista de Clientes</h1>
-      <AddClientForm httpConfig={httpConfig} loading={loading} />
-      <div className="container-card">
-        {/* 6 - loading */}
-        {loading && <p>Carregando dados...</p>}
-        {!loading &&
-          items &&
-          items.map((client) => (
-            <Card
-              key={client.id}
-              imgUrl={client.imgUrl}
-              textAlt="Imagem de Perfil"
-              name={client.name}
-            />
-          ))}
-        {/* {items &&
+      <div className="main-content">
+        <AddClientForm httpConfig={httpConfig} loading={loading} />
+        <div className="container-card">
+          {/* 6 - loading */}
+          {loading && <p>Carregando dados...</p>}
+          {!loading &&
+            items &&
+            items.map((client) => (
+              <Card
+                key={client.id}
+                imgUrl={client.imgUrl}
+                textAlt="Imagem de Perfil"
+                name={client.name}
+              />
+            ))}
+          {/* {items &&
           items.map((client) => (
             <Card
               key={client.id}
@@ -56,6 +57,7 @@ function App() {
               name={client.name}
             />
           ))} */}
+        </div>
       </div>
     </>
   );

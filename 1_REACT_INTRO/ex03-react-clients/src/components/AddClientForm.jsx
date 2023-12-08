@@ -36,7 +36,6 @@ const AddClientForm = ({ httpConfig, loading }) => {
 
   return (
     <div className="add-client">
-      <h2>Adicione um novo cliente</h2>
       <form onSubmit={handleSubmit}>
         <label>
           <span>Nome:</span>
