@@ -11,7 +11,7 @@ Para imagens estáticas (logo da aplicação, ícones, etc) podem utilizar a pas
 
 Caso optem por utilizar o json-server no projeto de vocês, sigam estes passos: 
 - Instalem o json-server pelo terminal na pasta do projeto: `npm install json-server`
-- No arquivo `package.json`, em scripts, adicione a seguinte linha: `"server": "json-server" --watch data/db.json`
+- No arquivo `package.json`, em scripts, adicione a seguinte linha: `"server": "json-server --watch data/db.json"`
 - Antes de inicializar a aplicação react, subam o servidor com o comando: `npm run server` (utilize dois terminais, um para subir o servidor json-server, outro para subir a aplicação react)
 - Na aplicação, vocês podem trabalhar com requisições http simples com uso da fetch API do próprio JavaScript (sem necessidade de auma biblioteca externa, como a Axios)
 - Vejam exemplos de requisições http para listagem, cadastro, exclusão e alteração de dados nos arquivos: [ClientList.jsx](1_REACT_INTRO/ex03-clients/src/pages/ClientList.jsx), [ClientDetail.jsx](1_REACT_INTRO/ex03-clients/src/pages/ClientDetail.jsx), [AddClientForm.jsx](1_REACT_INTRO/ex03-clients/src/components/AddClientForm.jsx) e [Card.jsx](1_REACT_INTRO/ex03-clients/src/components/Card.jsx).
