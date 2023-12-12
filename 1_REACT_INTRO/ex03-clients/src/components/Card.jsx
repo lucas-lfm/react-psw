@@ -15,7 +15,9 @@ const Card = ({ imgUrl, name, idClient, urlBase, handleCallFetch }) => {
     setIsModalVisible(false);
   };
 
+  // excluindo registro
   const handleDelete = async () => {
+    // montando a API para requisição DELETE concatenando o ID do cliente
     const url = `${urlBase}/${idClient}`;
 
     const config = {

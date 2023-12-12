@@ -8,6 +8,7 @@ import AddClientForm from "../components/AddClientForm";
 // styles
 import "./ClientList.css";
 
+// URL base para o recurso clients no servidor json-server
 const url = "http://localhost:3000/clients";
 
 const ClientList = () => {

@@ -9,6 +9,8 @@ import "./ClientDetail.css";
 
 const ClientDetail = () => {
   const { id } = useParams();
+
+  // URL para requisição de alteração (PUT) no servidor, especificando o ID do registro a ser alterado
   const url = `http://localhost:3000/clients/${id}`;
 
   const [editionMode, setEditionMode] = useState(false);
