@@ -5,7 +5,7 @@ A aplicação utiliza a biblioteca json-server para fornecer os dados por meio d
 
 Os dados providos pelo json-server estão na pasta data, no arquivo [db.json](1_REACT_INTRO/ex03-clients/data/db.json). Um conjunto com mais dados de teste, encontra-se no arquivo [db.backup.json](1_REACT_INTRO/ex03-clients/data/db.backup.json). Ao realizar testes de cadastros/alterações na aplicação, podem utilizar os dados desse último arquivo para preencher o formulário.
 
-As imagens dinâmicas (fotos de perfil) estão armazenadas no serviço de Storage do Firebase. Saiba mais sobre o serviço em <https://console.firebase.google.com>. Isso é necessário pois o react não consegue trabalhar com importações dinâmicas de recursos estáticos, logo as imagens dinâmicas precisam ser hospedadas e, serviços externos, caso você não possua uma aplicação back-end (servidor) que gerencie o armazenamento e disponilização das imagens.
+As imagens dinâmicas (fotos de perfil) estão armazenadas no serviço de Storage do Firebase. Saiba mais sobre o serviço em <https://console.firebase.google.com>. Isso é necessário pois o react não consegue trabalhar com importações dinâmicas de recursos estáticos, logo as imagens dinâmicas precisam ser hospedadas em serviços externos, caso você não possua uma aplicação back-end (servidor) que gerencie o armazenamento e disponilização das imagens.
 
 Para imagens estáticas (logo da aplicação, ícones, etc) podem utilizar a pasta assets e importar nos componentes que iram utilizar essas imagens.
 
