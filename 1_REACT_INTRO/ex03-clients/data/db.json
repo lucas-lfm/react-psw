@@ -11,14 +11,9 @@
       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil2.jpg?alt=media&token=9c0bcaed-f3f7-462f-9cc0-bef28d10d6b9"
     },
     {
-      "id": 3,
-      "name": "Jorge Miguel",
-      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil3.jpg?alt=media&token=4f932b14-01f1-46fb-9673-c293d93d6268"
-    },
-    {
       "name": "Teste",
-      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil6.jpg?alt=media&token=7ac87a27-632a-4a24-8eb4-9e44746b8583",
-      "id": 4
+      "imgUrl": "https://firebasestorage.googleapis.com/v0/b/psw-clients.appspot.com/o/perfil8.jpg?alt=media&token=6809ca2f-25e0-463d-a101-5f449f8902ed",
+      "id": 3
     }
   ]
 }

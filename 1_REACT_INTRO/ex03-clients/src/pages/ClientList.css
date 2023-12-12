@@ -1,15 +1,6 @@
-#root {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
 .main-content {
   display: flex;
-  flex-flow: column-reverse nowrap;
+  flex-flow: column nowrap;
   align-items: center;
   row-gap: 30px;
 }
@@ -22,4 +13,8 @@
   align-items: center;
   padding: 40px;
   border-bottom: 3px solid #00000044;
+}
+
+h1 {
+  text-align: center;
 }

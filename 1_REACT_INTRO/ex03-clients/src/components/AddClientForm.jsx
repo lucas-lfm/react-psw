@@ -1,41 +1,39 @@
 import { useState } from "react";
-import "./AddClientForm.css";
-import { useHttpRequest } from "../hooks/useHttpRequest";
+import "./ClientForm.css";
 
-const AddClientForm = ({ httpConfig, loading }) => {
+const AddClientForm = ({ url, loading, handleCallFetch }) => {
   const [name, setName] = useState("");
   const [imgUrl, setImgUrl] = useState("");
 
-  // 2 - Adição de clientes
+  // inserir registro
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const client = {
       name,
       imgUrl,
     };
 
-    // console.log(client);
+    const config = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(client),
+    };
 
-    // const res = await fetch(urlPost, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(client),
-    // });
-
-    // // 3 - carregamento dinâmico
-    // const addedClient = await res.json();
-    // setList((previousClients) => [...previousClients, addedClient]);
-
-    httpConfig(client, "POST");
+    let fetchOptions = [url, config];
+    const res = await fetch(...fetchOptions);
+    const json = await res.json();
 
     setName("");
     setImgUrl("");
+
+    handleCallFetch(json);
   };
 
   return (
-    <div className="add-client">
+    <div className="form-client">
       <form onSubmit={handleSubmit}>
         <label>
           <span>Nome:</span>
@@ -60,15 +58,15 @@ const AddClientForm = ({ httpConfig, loading }) => {
           />
         </label>
 
-        {/* 7 - loading no post */}
         {!loading ? (
-          <button type="submit">Adicionar cliente</button>
+          <button type="submit" className="btn btn-action">
+            Adicionar cliente
+          </button>
         ) : (
-          <button type="submit" disabled>
-            Aguarde
+          <button type="submit" className="btn btn-action" disabled>
+            Aguarde...
           </button>
         )}
-        {/* <button type="submit">Adicionar cliente</button> */}
       </form>
     </div>
   );

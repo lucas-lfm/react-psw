@@ -1,0 +1,13 @@
+.client-detail-container {
+  max-width: 600px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-detail-container img {
+  width: 200px;
+}

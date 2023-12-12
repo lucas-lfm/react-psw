@@ -1,9 +1,9 @@
-.avatar {
+.profile-pic {
   border-radius: 50%;
   width: 100%;
 }
 
-.avatar-name {
+.profile-name {
   margin: 0;
   font-size: 1rem;
 }
